@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Sederhana</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Posisi judul di atas input tanpa efek tebal (bold) */
+        .judul {
+            font-size: 22px;
+            margin-bottom: 20px; 
+        }
+        
+        /* Menjaga kedua input tetap sejajar */
+        .baris-input {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        input {
+            padding: 8px;
+        }
+        
+        .baris-tombol {
+            margin: 20px 0;
+        }
+        
+        button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #hasil {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="judul">
+        <span>Kalkulator Sederhana</span>
+    </div>
+    
+    <div class="baris-input">
+        <input type="number" id="angka-1" placeholder="Angka pertama">
+        <input type="number" id="angka-2" placeholder="Angka kedua">
+    </div>
+    
+    <div class="baris-tombol">
+        <button id="tombol-tambah">+</button>
+        <button id="tombol-kurang">-</button>
+        <button id="tombol-kali">x</button>
+        <button id="tombol-bagi">/</button>
+    </div>
+    
+    <p id="hasil">Hasil akan tampil di sini</p>
+    
+    <script src="script.js"></script>
+</body>
+</html>
